@@ -20,14 +20,14 @@ with open("tests/requirements.txt") as _file:
     test_reqs = [req for req in _file.readlines()]
 
 setup(
-    name="lit_jupyterlab",
+    name="lit_vscode",
     version="0.0.2",
-    description="JupyterLab component for Lightning Applications",
+    description="VSCode component for Lightning Applications",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    author="Krishna, William, Marc, Thomas",
-    author_email="krishna@grid.ai",
-    url="https://github.com/Lightning-AI/LAI-Jupyter-Component",
+    author="Krishna",
+    author_email="krishna@lightning.ai",
+    url="https://github.com/krishnakalyan3/vscode_component",
     packages=find_packages(exclude=["tests", "tests.*"]),
     install_requires=install_reqs,
     dependency_links=dependency_links,
