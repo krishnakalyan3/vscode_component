@@ -17,7 +17,7 @@ class VSCodeServer(L.LightningWork):
         super().__init__(cloud_compute=cloud_compute, cloud_build_config=CustomBuildConfig(), parallel=True)
         self.vscode_url = None
 
-    def run(self, drive: Drive):
+    def run(self):
         # Start VSCodeServer
         with open(f"/home/zeus/vscode_server_{self.port}", "w") as f:
             proc = subprocess.Popen(
