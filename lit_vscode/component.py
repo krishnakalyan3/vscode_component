@@ -5,7 +5,7 @@ from typing import Optional
 import subprocess
 import shlex
 from time import sleep
-
+from lightning.app.storage.drive import Drive
 
 class CustomBuildConfig(L.BuildConfig):
     def build_commands(self):
@@ -17,7 +17,7 @@ class VSCodeServer(L.LightningWork):
         super().__init__(cloud_compute=cloud_compute, cloud_build_config=CustomBuildConfig(), parallel=True)
         self.vscode_url = None
 
-    def run(self):
+    def run(self, drive: Drive):
         # Start VSCodeServer
         with open(f"/home/zeus/vscode_server_{self.port}", "w") as f:
             proc = subprocess.Popen(
