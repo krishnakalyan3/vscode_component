@@ -27,12 +27,3 @@ class VSCodeServer(L.LightningWork):
                 stdout=f,
                 stderr=f,
             )
-        sleep(5)
-
-        # Extract token
-        with open(f"vscode_server_{self.port}") as f:
-            lines = f.readlines()
-            # Rewrite the URL
-            for i in lines:
-                if 'lightningwork'in i:
-                    self.vscode_url = i.split(' ')[-1].strip()
