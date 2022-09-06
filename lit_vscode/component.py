@@ -1,11 +1,6 @@
-import sys
-import os
 import lightning as L
 from typing import Optional
 import subprocess
-import shlex
-from time import sleep
-from lightning.app.storage.drive import Drive
 
 class CustomBuildConfig(L.BuildConfig):
     def build_commands(self):
@@ -20,10 +15,5 @@ class VSCodeServer(L.LightningWork):
     def run(self):
         # Start VSCodeServer
         with open(f"/home/zeus/vscode_server_{self.port}", "w") as f:
-            proc = subprocess.Popen(
-                shlex.split(f"code-server --bind-addr '{self.host}:{self.port}' --auth none"),
-                bufsize=0,
-                close_fds=True,
-                stdout=f,
-                stderr=f,
-            )
+            proc = subprocess.Popen("code-server --bind-addr '{self.host}:{self.port}' --auth none",
+                bufsize=0,close_fds=True,stdout=f,stderr=f)
