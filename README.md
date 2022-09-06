@@ -9,6 +9,8 @@ ______________________________________________________________________
 
 In VS Code, users can seamlessly leverage the environments that make them the most productive. These extensions install a server on the remote environment, allowing VS Code to smoothly interact with remote source code and runtimes. This component will install Visual Studio Code Server and access it in a browser.
 
+![VSCode](images/vscode-ss.png)
+
 ### Usage
 
 
@@ -38,8 +40,8 @@ lightning run app demo_app.py --cloud
 lightning run app demo_app.py --cloud --env LIGHTNING_JUPYTER_LAB_COMPUTE=gpu
 ```
 
+### Known Issues
 ### TODO
 - [ ] Unit Test
 - [ ] CI Pipeline
 - [ ] Precommit
-
