@@ -7,7 +7,7 @@ ______________________________________________________________________
 
 ### [Visual Studio Code Server](https://github.com/coder/code-server)
 
-In VS Code, users can seamlessly leverage the environments that make them the most productive. These extensions install a server on the remote environment, allowing VS Code to smoothly interact with remote source code and runtimes. This component will install Visual Studio Code Server and access it in a browser.
+In VS Code, users can seamlessly leverage the environments that make them the most productive. This component will install Visual Studio Code Server within a `Work` with a compute profile of your choice and access it in a browser.
 
 ![VSCode](images/vscode-ss.png)
 
@@ -33,7 +33,7 @@ class RootFlow(L.LightningFlow):
 app = L.LightningApp(RootFlow())
 ```
 
-By default this component launches with cpu-small [Compute](https://lightning.ai/lightning-docs/core_api/lightning_work/compute.html) Instance and python Kernel. This can be overridden using the LIGHTNING_JUPYTER_LAB_KERNEL environment variable.
+By default this component launches with cpu-small [Compute](https://lightning.ai/lightning-docs/core_api/lightning_work/compute.html) Instance. This can be overridden using the LIGHTNING_JUPYTER_LAB_KERNEL environment variable.
 
 ```
 lightning run app demo_app.py --cloud
