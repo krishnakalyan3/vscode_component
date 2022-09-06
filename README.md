@@ -7,7 +7,7 @@ ______________________________________________________________________
 
 ### [VSCodeServer](https://github.com/coder/code-server)
 
-A Component to run Visual Studio Code Server and access it in your browser.
+In VS Code, users can seamlessly leverage the environments that make them the most productive. These extensions install a server on the remote environment, allowing VS Code to smoothly interact with remote source code and runtimes. This component will install Visual Studio Code Server and access it in a browser.
 
 ### Usage
 
