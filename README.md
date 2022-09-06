@@ -5,7 +5,7 @@ A Lightning component to Launch Visual Studio Code Server
 ______________________________________________________________________
 </div>
 
-### [VSCodeServer](https://github.com/coder/code-server)
+### [Visual Studio Code Server](https://github.com/coder/code-server)
 
 In VS Code, users can seamlessly leverage the environments that make them the most productive. These extensions install a server on the remote environment, allowing VS Code to smoothly interact with remote source code and runtimes. This component will install Visual Studio Code Server and access it in a browser.
 
