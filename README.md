@@ -41,6 +41,8 @@ lightning run app demo_app.py --cloud --env LIGHTNING_JUPYTER_LAB_COMPUTE=gpu
 ```
 
 ### Known Issues
+At this moment copy and paste to the terminal does not work. As a workaround you can paste to an existsing or a new file.
+
 ### TODO
 - [ ] Unit Test
 - [ ] CI Pipeline
