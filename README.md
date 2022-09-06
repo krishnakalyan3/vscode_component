@@ -40,7 +40,6 @@ lightning run app demo_app.py --cloud --env LIGHTNING_JUPYTER_LAB_COMPUTE=gpu
 
 ### TODO
 - [ ] Unit Test
-- [ ] Application Check
 - [ ] CI Pipeline
 - [ ] Precommit
 
