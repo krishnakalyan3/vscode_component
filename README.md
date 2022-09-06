@@ -1,8 +1,9 @@
 <div align="center">
 <img src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1440/https://ubuntu.com/wp-content/uploads/c9f4/visualstudio_code-card.png" width="200px">
 
-A Lightning component to Launch Jupyter Lab
+A Lightning component to Launch Visual Studio Code Server
 ______________________________________________________________________
+</div>
 
 ### [VSCodeServer](https://github.com/coder/code-server)
 
