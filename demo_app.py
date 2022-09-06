@@ -7,7 +7,7 @@ from lit_vscode import VSCodeServer
 class RootFlow(L.LightningFlow):
     def __init__(self) -> None:
         super().__init__()
-        self.vscode_work = VSCodeServer(cloud_compute=L.CloudCompute(os.getenv("COMPUTE", "cpu-small")))
+        self.vscode_work = VSCodeServer(cloud_compute=L.CloudCompute(os.getenv("LIGHTNING_JUPYTER_LAB_COMPUTE", "cpu-small")))
 
     def run(self):
         self.vscode_work.run()
