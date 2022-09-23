@@ -22,7 +22,7 @@ import os
 class RootFlow(L.LightningFlow):
     def __init__(self) -> None:
         super().__init__()
-        self.vscode_work = VSCodeServer(cloud_compute=L.CloudCompute(os.getenv("LIGHTNING_JUPYTER_LAB_COMPUTE", "cpu-small")))
+        self.vscode_work = VSCodeServer(cloud_compute=L.CloudCompute(os.getenv("LIGHTNING_VSCODE_COMPUTE", "cpu-small")))
 
     def run(self):s
         self.vscode_work.run()
@@ -33,11 +33,11 @@ class RootFlow(L.LightningFlow):
 app = L.LightningApp(RootFlow())
 ```
 
-By default this component launches with cpu-small [Compute](https://lightning.ai/lightning-docs/core_api/lightning_work/compute.html) Instance. This can be overridden using the LIGHTNING_JUPYTER_LAB_KERNEL environment variable.
+By default this component launches with cpu-small [Compute](https://lightning.ai/lightning-docs/core_api/lightning_work/compute.html) Instance. This can be overridden using the LIGHTNING_VSCODE_COMPUTE environment variable.
 
 ```
 lightning run app demo_app.py --cloud
-lightning run app demo_app.py --cloud --env LIGHTNING_JUPYTER_LAB_COMPUTE=gpu
+lightning run app demo_app.py --cloud --env LIGHTNING_VSCODE_COMPUTE=gpu
 ```
 
 ### Known Issues
